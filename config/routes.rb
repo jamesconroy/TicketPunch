@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/sessions' => 'sessions#create'
+  post '/sessions' => 'sessions#create'
   delete '/sessions' => 'sessions#destroy'
 
   get '/api/movies' => 'movies_api#search'
