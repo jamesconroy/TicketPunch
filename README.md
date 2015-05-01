@@ -4,3 +4,6 @@
 
 To make the process playful...
 ![ScreenShot](/screenshot.png)
+
+
+![ScreenShot](/cel.gif)
