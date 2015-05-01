@@ -1,0 +1,25 @@
+<h1>Welcome <%= @user.username %></h1>
+
+<%= form_tag('/sessions', method: 'delete') do %>
+  <%= submit_tag "Log-Out" %>
+<% end %>
+
+
+<input id='movie_search' type="text" placeholder='...movie title'>
+<div id='movie-display'></div>
+
+
+<script id='movie-template' type='text/template' charset="utf-8">
+  <h2 class='title'>
+    <%%= title %>
+  </h2>
+  <h4 class='meta-info'>
+    <%%= director %> (<%%= released %>)
+  </h4>
+  <p class='plot'>
+    <%%= plot %>
+  </p>
+  <button id='wish-list-add'>
+    Watch
+  </button>
+</script>

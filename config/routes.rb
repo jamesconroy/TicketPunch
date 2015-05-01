@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  get '/sessions' => 'sessions#create'
+  delete '/sessions' => 'sessions#destroy'
+
+  get '/api/movies' => 'movies_api#search'
+
+  get 'users/log-in' => 'users#log_in'
+  get '/profile' => 'users#profile'
+  resources :users, except: [:index]
+
+  resources :movies, only: [:index, :show]
+  root 'welcome#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
