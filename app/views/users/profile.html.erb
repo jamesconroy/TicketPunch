@@ -9,6 +9,25 @@
 <div id='movie-display'></div>
 
 
+<table>
+  <% @user.watch_list_entries.each do |entries| %>
+    <tr>
+      <td>
+        <%= entries.movie.title %>
+      </td>
+      <td>
+        <form action="/users/wish/<%= entries.id %>" method="post">
+          <%= token_tag %>
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Remove">
+        </form>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+
+
 <script id='movie-template' type='text/template' charset="utf-8">
   <h2 class='title'>
     <%%= title %>
@@ -19,7 +38,9 @@
   <p class='plot'>
     <%%= plot %>
   </p>
-  <button id='wish-list-add'>
-    Watch
-  </button>
+  <form action="/users/wish" method="post">
+    <%= token_tag %>
+    <input type="hidden" name="movie_id" value="<%%= id %>">
+    <input type="submit" value="Add To Watch List">
+  </form>
 </script>

@@ -8,15 +8,6 @@ $(function(){
   app.movieTemplate = _.template( app.movieTemplateNode.html() );
 
 
-  $('#movie-display').on('click', '#wish-list-add', function(){
-    $.ajax({
-      method: 'post',
-      url: '/api/',
-      success: function(data){
-      }
-    });
-  });
-
   $('#movie_search').on('keyup', function(){
 
     var field = $(this);
@@ -30,6 +21,7 @@ $(function(){
         if (data.movie){
           var movieHTML = app.movieTemplate( data.movie );
           $('#movie-display').html( movieHTML );
+          app.movieID = data.movie.id;
         }
       }
     });

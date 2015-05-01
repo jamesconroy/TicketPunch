@@ -5,11 +5,13 @@ Rails.application.routes.draw do
 
   get '/api/movies' => 'movies_api#search'
 
-  get 'users/log-in' => 'users#log_in'
+  post '/users/wish' => 'users#wish'
+  delete '/users/wish/:id' => 'users#destroy_wish'
+
+  get '/users/log-in' => 'users#log_in'
   get '/profile' => 'users#profile'
   resources :users, except: [:index]
 
-  resources :movies, only: [:index, :show]
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
