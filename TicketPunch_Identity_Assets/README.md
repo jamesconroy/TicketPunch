@@ -7,8 +7,6 @@ You've just been hired by a TicketPunch! Congrats! Your first assignment? You're
 - *User interface kit*: Flat UI (http://designmodo.github.io/Flat-UI/)
 - *Logos:* Provided in `TicketPunch_logos.pdf` and `logo_png`
 - *Colour scheme*: https://color.adobe.com/TicketPunch-color-theme-6083310/
-- <a style="background-color: #2C3E4F; color: white;">#2C3E4F</span>
-
 
 ## Designers
 - You must use the provided brand assets to complete your assigned task.
@@ -31,3 +29,16 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 ```
+
+## Sass (scss) colour variables (included in /assets/stylesheets/application.scss)
+```scss
+// Brand Defined Colours
+$asset-slate: #2C3E4F;
+$asset-sky: #3E98D3
+$asset-dusk: #965DA5;
+$asset-mistyforest: #2CB89A;
+$asset-wenge: #231F20;
+```
+
+## Colour Scheme
+![ScreenShot](/ColourPalette.gif)
