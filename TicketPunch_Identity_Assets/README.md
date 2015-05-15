@@ -4,14 +4,17 @@ You've just been hired by a TicketPunch! Congrats! Your first assignment? You're
 
 ## Identity Assets
 - *Font*: Lato (`font-family: leto;`)
-- *User interface kit*: <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a>
-- *Logos:* Provided in `TicketPunch_logos.pdf`
+- *User interface kit*: Flat UI (http://designmodo.github.io/Flat-UI/)
+- *Logos:* Provided in `TicketPunch_logos.pdf` and `logo_png`
+- *Colour scheme*: https://color.adobe.com/TicketPunch-color-theme-6083310/
+- <a style="background-color: #2C3E4F; color: white;">#2C3E4F</span>
+
 
 ## Designers
 - You must use the provided brand assets to complete your assigned task.
 - Convey style guide to developers.
 - Communicate with developers the placement, intention, design, and attributes of each design element.
-- You will need to create image file logos (transparent PNG is a *huge* plus!) for developers to use.
+- Use logo and images at your discretion from the `logo_png` folder in this directory.
 
 ## Developers
 - You will work with designers to implement user interface elements.
