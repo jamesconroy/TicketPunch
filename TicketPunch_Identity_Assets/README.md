@@ -15,6 +15,7 @@ You've just been hired by a TicketPunch! Congrats! Your first assignment? You're
 - Use logo and images at your discretion from the `logo_png` folder in this directory.
 
 ## Developers
+- First and foremost: create a `.gitignore` and ignore this directory. You do not want your resources pushed live into productiuon.
 - You will work with designers to implement user interface elements.
 - You will add the required fonts for use in design.
 - Use Javascript to create intended interactions specified by designers.
