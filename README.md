@@ -1,5 +1,4 @@
 ## Insert Logo Image here!
-![ScreenShot](/logo.png)
 
 ![ScreenShot](/screenshot.png)
 
