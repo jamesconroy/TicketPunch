@@ -8,13 +8,7 @@
 - Search for a movie and add it to your watch list!
 - Remove movies from your watch list when you're finished!
 
-## 
-
-To make the process playful...
-![ScreenShot](/screenshot.png)
+## Usage Information / Notes for viewer / etc
 
 You can also use animated GIFs for awesome!
 ![ScreenShot](/cel.gif)
-
-Even Youtube videos!
-<iframe width="560" height="315" src="https://www.youtube.com/embed/13pL0TiOiHM" frameborder="0" allowfullscreen></iframe>
