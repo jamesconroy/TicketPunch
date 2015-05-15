@@ -41,4 +41,4 @@ $asset-wenge: #231F20;
 ```
 
 ## Colour Scheme
-![ScreenShot](/ColourPalette.gif)
+![ScreenShot](/ColourPalette.PNG)
