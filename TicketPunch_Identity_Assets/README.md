@@ -30,7 +30,8 @@ body {
 }
 ```
 
-## Sass (scss) colour variables (included in /assets/stylesheets/application.scss)
+## Sass (scss) colour variables 
+These are included in `/assets/stylesheets/application.scss`
 ```scss
 // Brand Defined Colours
 $asset-slate: #2C3E4F;
@@ -42,3 +43,11 @@ $asset-wenge: #231F20;
 
 ## Colour Scheme
 <img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/ColourPalette.PNG">
+
+## Brand Images
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo1.png">
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo2.png">
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo3.png">
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo1_black_and_white.png">
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo2_black_and_white.png">
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/logo_png/logo3_black_and_white.png">
