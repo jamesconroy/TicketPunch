@@ -41,4 +41,4 @@ $asset-wenge: #231F20;
 ```
 
 ## Colour Scheme
-![ScreenShot](/ColourPalette.PNG)
+<img src="https://github.com/amadden80/TicketPunch/blob/master/TicketPunch_Identity_Assets/ColourPalette.PNG">
