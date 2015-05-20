@@ -9,12 +9,33 @@
 <body>
 
   <% unless current_user %>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/users/new">Sign-Up</a>
-      <a href="/users/log-in">Log-In</a>
-    </nav>
+  <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                  <span class="sr-only">Toggle navigation</span>
+                </button>
+                <h5 class="navbar-brand">Ticket Punch</h5>
+                <h6 class="navbar-brand">The fun friendly way to organize your movie watch list.</h6>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <!-- <ul class="nav navbar-nav navbar-center">
+
+                 </ul> -->
+               <span>
+                 <form class="navbar-form navbar-right" action="#" role="search">
+                  <div class="form-group" id="hello">
+                    <a href="/">Home</a>
+                    <a href="/users/new">Sign-Up</a>
+                    <a href="/users/log-in">Log-In</a>
+                      </span>
+                    </div>
+
+                </form>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+
   <% end %>
+
 
 <%= yield %>
 
