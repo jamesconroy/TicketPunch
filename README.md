@@ -23,7 +23,7 @@ The profile page is separated into three parts:
 
 * The right column contains the "Watched List."
 
-#Wish List vs Watch List
+##Wish List vs Watch List
 In the Movies table in the database we've added a boolean called `watched`. When a movie is initially added to the database it would have the value of `false`, which would change to `true` once the "watched" button is clicked.
 
 The "Wish List" column would render the data with a value of `false` and the "Watched List" column would render data with a value of `true`.
