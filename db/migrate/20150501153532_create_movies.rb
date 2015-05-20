@@ -8,6 +8,7 @@ class CreateMovies < ActiveRecord::Migration
       t.text :plot
       t.string :imdb_id
       t.references :movie_query
+      t.boolean :watched
 
       t.timestamps null: false
     end

@@ -1,25 +1,60 @@
-<h1>Welcome <%= @user.username %></h1>
+<style>
+  input{
+    margin-top: 30px;
+  }
 
-<%= form_tag('/sessions', method: 'delete') do %>
-  <%= submit_tag "Log-Out" %>
-<% end %>
+  .listing{
+    background-color: lightblue;
+  }
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Welcome <%= @user.username %></h1>
+    </div>
+    <div class="col-md-6">
+      <%= form_tag('/sessions', method: 'delete') do %>
+        <%= submit_tag "Log-Out" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<br>
+
 <div class="container-fluid">
 
   <div class='row'>
-    <div class='col-md-6'>
+    <div class='col-md-4 col-md-offset-1'>
       <input id='movie_search' type="text" placeholder='...movie title'>
       <div id='movie-display'></div>
+
+    </div>
+    <div class="col-md-3">
+      <h4>Wish List</h4>
       <table>
         <% @user.watch_list_entries.each do |entries| %>
           <tr>
-            <td>
+            <td class="listing">
               <%= entries.movie.title %>
+            </td>
+            <td>
+              <%= entries.movie.director %>
+              <%= entries.movie.genre %>
             </td>
             <td>
               <form action="/users/wish/<%= entries.id %>" method="post">
                 <%= token_tag %>
                 <input type="hidden" name="_method" value="delete">
-                <input type="submit" value="Remove">
+                <input type="submit" class="btn btn-info" value="Remove">
+              </form>
+            </td>
+            <td>
+              <form action="/users/wish/<%= entries.id %>" method="post">
+                <%= token_tag %>
+                <input type="hidden" name="_method" value="delete">
+                <input type="submit" class="btn btn-success" value="Watched">
               </form>
             </td>
           </tr>
@@ -27,10 +62,7 @@
       </table>
     </div>
     <div class="col-md-3">
-
-    </div>
-    <div class="col-md-3">
-
+      <h4>Watched List</h4>
     </div>
   </div>
 </div>
