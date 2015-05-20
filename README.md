@@ -35,5 +35,3 @@ In the upcoming versions there will be a feature that selects a random title fro
 Additionally, in future versions the movie poster associated with the selected title will populate in the search form when a user searches. The posters will also render in the "wish list" column. This will provide the user with a visual effect for a quicker selection process.  
 
 In the "wish list" and "watched list" columns there will be a counter that lists the number of movies in each column. This will present the user with a status update of where they are in terms of movies they want to watch versus movies they have watched.
-
-.
