@@ -1,6 +1,6 @@
 # TicketPunch Identity Assets
 
-You've just been hired by a TicketPunch! Congrats! Your first assignment? You're going to be working on a their software as a service product. They have a problem: they hired a group of back-end developers to create a new Ruby on Rails application. It works - everything is completely functional and meets the business requirements set. You've been hired to work on TicketPunch's front-end. Your brand asset team has created a set of company identity asssets. 
+You've just been hired by a TicketPunch! Congrats! Your first assignment? You're going to be working on a their software as a service product. They have a problem: they hired a group of back-end developers to create a new Ruby on Rails application. It works - everything is completely functional and meets the business requirements set. You've been hired to work on TicketPunch's front-end. Your brand asset team has created a set of company identity asssets.
 
 ## Identity Assets
 - *Font*: Lato (`font-family: leto;`)
@@ -31,7 +31,7 @@ body {
 }
 ```
 
-## Sass (scss) colour variables 
+## Sass (scss) colour variables
 These are included in `/assets/stylesheets/application.scss`
 ```scss
 // Brand Defined Colours
