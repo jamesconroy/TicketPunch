@@ -8,7 +8,7 @@ $(function(){
   app.movieTemplate = _.template( app.movieTemplateNode.html() );
 
 
-  $('#movie_search').on('keyup', function(){
+  $('.movie_search').on('keyup', function(){
 
     var field = $(this);
 
@@ -20,7 +20,7 @@ $(function(){
         console.log(data)
         if (data.movie){
           var movieHTML = app.movieTemplate( data.movie );
-          $('#movie-display').html( movieHTML );
+          $('.movie-display').html( movieHTML );
           app.movieID = data.movie.id;
         }
       }
