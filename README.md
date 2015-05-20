@@ -10,9 +10,9 @@ After watching a movie from their wish list, users can click the "watched" butto
 
 ##OMDB API
 
-![User Page](/userPage.png)
-
 The app makes an ajax call to `http://www.omdbapi.com/?t=#{movie_title}&r=json` returning the movie data as JSON. The data returned is "Title", "Genre", "Director", "Released", "Plot", and imdbID".
+
+![User Page](/userPage.png)
 
 ##Profile Page
 The profile page is separated into three parts:
