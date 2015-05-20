@@ -5,6 +5,7 @@
 
   .listing{
     background-color: lightblue;
+    width: 100px;
   }
 </style>
 
@@ -39,10 +40,10 @@
             <td class="listing">
               <%= entries.movie.title %>
             </td>
-            <td>
+            <!-- <td>
               <%= entries.movie.director %>
               <%= entries.movie.genre %>
-            </td>
+            </td> -->
             <td>
               <form action="/users/wish/<%= entries.id %>" method="post">
                 <%= token_tag %>
