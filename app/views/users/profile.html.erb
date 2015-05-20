@@ -3,30 +3,37 @@
 <%= form_tag('/sessions', method: 'delete') do %>
   <%= submit_tag "Log-Out" %>
 <% end %>
+<div class="container-fluid">
 
+  <div class='row'>
+    <div class='col-md-6'>
+      <input id='movie_search' type="text" placeholder='...movie title'>
+      <div id='movie-display'></div>
+      <table>
+        <% @user.watch_list_entries.each do |entries| %>
+          <tr>
+            <td>
+              <%= entries.movie.title %>
+            </td>
+            <td>
+              <form action="/users/wish/<%= entries.id %>" method="post">
+                <%= token_tag %>
+                <input type="hidden" name="_method" value="delete">
+                <input type="submit" value="Remove">
+              </form>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+    <div class="col-md-3">
 
-<input id='movie_search' type="text" placeholder='...movie title'>
-<div id='movie-display'></div>
+    </div>
+    <div class="col-md-3">
 
-
-<table>
-  <% @user.watch_list_entries.each do |entries| %>
-    <tr>
-      <td>
-        <%= entries.movie.title %>
-      </td>
-      <td>
-        <form action="/users/wish/<%= entries.id %>" method="post">
-          <%= token_tag %>
-          <input type="hidden" name="_method" value="delete">
-          <input type="submit" value="Remove">
-        </form>
-      </td>
-    </tr>
-  <% end %>
-</table>
-
-
+    </div>
+  </div>
+</div>
 
 <script id='movie-template' type='text/template' charset="utf-8">
   <h2 class='title'>
