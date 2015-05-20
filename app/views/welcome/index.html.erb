@@ -2,3 +2,24 @@
 <h2>
   The fun friendly way to organize your movie watch list.
 </h2>
+
+<input id='movie_search' type="text" placeholder='...movie title'>
+<div id='movie-display'></div>
+
+
+<script id='movie-template' type='text/template' charset="utf-8">
+  <h2 class='title'>
+    <%%= title %>
+  </h2>
+  <h4 class='meta-info'>
+    <%%= director %> (<%%= released %>)
+  </h4>
+  <p class='plot'>
+    <%%= plot %>
+  </p>
+  <form action="/users/wish" method="post">
+    <%= token_tag %>
+    <input type="hidden" name="movie_id" value="<%%= id %>">
+    <input type="submit" value="Add To Watch List">
+  </form>
+</script>
